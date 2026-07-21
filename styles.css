@@ -1,70 +1,4941 @@
+/* Add font files for EB Garamond */
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('fonts/eb-garamond.woff2') format('woff2'),
+       url('fonts/eb-garamond.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
-  .fusion-element-highlight {
-    outline: 2px solid rgb(26, 115, 235) !important;
-    outline-style: solid !important;
-  }
+:root {
+  --font-family-eb-garamond: 'EB Garamond', sans-serif;
+  --font-family-inter: 'Inter', sans-serif;
+  --font-family-lato: 'Lato', sans-serif;
+  --cell-laurel-03208575.figma.site/Almond Frost: rgba(140, 123, 110, 1);
+  --cell-laurel-03208575.figma.site/Black 0%: rgba(0, 0, 0, 0);
+  --cell-laurel-03208575.figma.site/Black 50%: rgba(0, 0, 0, 0.5);
+  --cell-laurel-03208575.figma.site/Bridal Heath: rgba(255, 248, 240, 1);
+  --cell-laurel-03208575.figma.site/Bridal Heath 4%: rgba(255, 248, 240, 0.03999999910593033);
+  --cell-laurel-03208575.figma.site/Cioccolato: rgba(107, 45, 14, 1);
+  --cell-laurel-03208575.figma.site/Cioccolato 10%: rgba(107, 45, 14, 0.10000000149011612);
+  --cell-laurel-03208575.figma.site/Cioccolato 12%: rgba(107, 45, 14, 0.11999999731779099);
+  --cell-laurel-03208575.figma.site/Cioccolato 20%: rgba(107, 45, 14, 0.20000000298023224);
+  --cell-laurel-03208575.figma.site/Coffee Bean: rgba(44, 24, 16, 1);
+  --cell-laurel-03208575.figma.site/Crowshead: rgba(26, 12, 6, 1);
+  --cell-laurel-03208575.figma.site/Crowshead 70%: rgba(26, 12, 6, 0.699999988079071);
+  --cell-laurel-03208575.figma.site/Dawn Pink: rgba(240, 232, 220, 1);
+  --cell-laurel-03208575.figma.site/Fantasy: rgba(250, 246, 240, 1);
+  --cell-laurel-03208575.figma.site/Feta: rgba(240, 253, 244, 1);
+  --cell-laurel-03208575.figma.site/Fun Green: rgba(0, 130, 54, 1);
+  --cell-laurel-03208575.figma.site/Ice Cold: rgba(185, 248, 207, 1);
+  --cell-laurel-03208575.figma.site/Marigold: rgba(184, 134, 42, 1);
+  --cell-laurel-03208575.figma.site/Marigold 15%: rgba(184, 134, 42, 0.15000000596046448);
+  --cell-laurel-03208575.figma.site/Marigold 20%: rgba(184, 134, 42, 0.20000000298023224);
+  --cell-laurel-03208575.figma.site/Marigold 40%: rgba(184, 134, 42, 0.4000000059604645);
+  --cell-laurel-03208575.figma.site/Marigold 50%: rgba(184, 134, 42, 0.5);
+  --cell-laurel-03208575.figma.site/Marigold 60%: rgba(184, 134, 42, 0.6000000238418579);
+  --cell-laurel-03208575.figma.site/Rodeo Dust: rgba(200, 184, 154, 1);
+  --cell-laurel-03208575.figma.site/Sundance: rgba(201, 165, 90, 1);
+  --cell-laurel-03208575.figma.site/White: rgba(255, 255, 255, 1);
+  --cell-laurel-03208575.figma.site/White 40%: rgba(255, 255, 255, 0.4000000059604645);
+  --cell-laurel-03208575.figma.site/White 70%: rgba(255, 255, 255, 0.699999988079071);
+  --text-black: rgba(0, 0, 0, 1);
+  --text-rgb-184-134-42: rgba(184, 134, 42, 1);
+  --text-rgb-201-165-90: rgba(201, 165, 90, 1);
+  --text-white: rgba(255, 255, 255, 1);
+  --text-rgb-44-24-16: rgba(44, 24, 16, 1);
+  --text-rgb-140-123-110: rgba(140, 123, 110, 1);
+  --text-rgb-107-45-14: rgba(107, 45, 14, 1);
+  --text-rgb-0-130-54: rgba(0, 130, 54, 1);
+  --text-rgb-200-184-154: rgba(200, 184, 154, 1);
+  --text-rgb-255-248-240: rgba(255, 248, 240, 1);
+}
 
-  .fusion-element-selected {
-    outline: 4px solid rgb(26, 115, 235) !important;
-    outline-style: solid !important;
-    outline-offset: 0px !important;
+.text-black {
+  color: var(--text-black);
+}
+
+.text-rgb-184-134-42 {
+  color: var(--text-rgb-184-134-42);
+}
+
+.text-rgb-201-165-90 {
+  color: var(--text-rgb-201-165-90);
+}
+
+.text-white {
+  color: var(--text-white);
+}
+
+.text-rgb-44-24-16 {
+  color: var(--text-rgb-44-24-16);
+}
+
+.text-rgb-140-123-110 {
+  color: var(--text-rgb-140-123-110);
+}
+
+.text-rgb-107-45-14 {
+  color: var(--text-rgb-107-45-14);
+}
+
+.text-rgb-0-130-54 {
+  color: var(--text-rgb-0-130-54);
+}
+
+.text-rgb-200-184-154 {
+  color: var(--text-rgb-200-184-154);
+}
+
+.text-rgb-255-248-240 {
+  color: var(--text-rgb-255-248-240);
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prototype Links */
+a.prototype-link {
+  text-decoration: none;
+  color: inherit;
+  display: contents;
+}
+
+.vector-4 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 2.24999737739563px solid var(--cell-laurel-03208575.figma.site/White);
+  border: none;
+  outline: none;
+}
+
+.variant-1-3 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.vector-6 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.2704178094863892px solid var(--cell-laurel-03208575.figma.site/White);
+  border: none;
+  outline: none;
+}
+
+.variant-2-5 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.vector-8 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.7136437892913818px solid var(--cell-laurel-03208575.figma.site/Fun Green);
+  border: none;
+  outline: none;
+}
+
+.variant-3-7 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.vector-10 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.6363637447357178px solid var(--cell-laurel-03208575.figma.site/Marigold);
+  border: none;
+  outline: none;
+}
+
+.variant-4-9 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.vector-12 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.6363637447357178px solid var(--cell-laurel-03208575.figma.site/Marigold);
+  border: none;
+  outline: none;
+}
+
+.variant-5-11 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.vector-14 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.9040474891662598px solid var(--cell-laurel-03208575.figma.site/White);
+  border: none;
+  outline: none;
+}
+
+.variant-6-13 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.vector-16 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.817911148071289px solid var(--cell-laurel-03208575.figma.site/Marigold);
+  border: none;
+  outline: none;
+}
+
+.variant-7-15 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.vector-18 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.817911148071289px solid var(--cell-laurel-03208575.figma.site/Marigold);
+  border: none;
+  outline: none;
+}
+
+.variant-8-17 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.vector-20 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 2.5000112056732178px solid var(--cell-laurel-03208575.figma.site/Marigold);
+  border: none;
+  outline: none;
+}
+
+.variant-9-19 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.vector-22 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.817911148071289px solid var(--cell-laurel-03208575.figma.site/Marigold);
+  border: none;
+  outline: none;
+}
+
+.variant-10-21 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.vector-24 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.6666666269302368px solid var(--cell-laurel-03208575.figma.site/White);
+  border: none;
+  outline: none;
+}
+
+.vector-25 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.6666666269302368px solid var(--cell-laurel-03208575.figma.site/White);
+  border: none;
+  outline: none;
+}
+
+.vector-26 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.6666666269302368px solid var(--cell-laurel-03208575.figma.site/White);
+  border: none;
+  outline: none;
+}
+
+.variant-11-23 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.vector-28 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.5px solid var(--cell-laurel-03208575.figma.site/Cioccolato);
+  border: none;
+  outline: none;
+}
+
+.vector-29 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.5px solid var(--cell-laurel-03208575.figma.site/Cioccolato);
+  border: none;
+  outline: none;
+}
+
+.vector-30 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.5px solid var(--cell-laurel-03208575.figma.site/Cioccolato);
+  border: none;
+  outline: none;
+}
+
+.variant-12-27 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.vector-32 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.6666666269302368px solid var(--cell-laurel-03208575.figma.site/Almond Frost);
+  border: none;
+  outline: none;
+}
+
+.vector-33 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.6666666269302368px solid var(--cell-laurel-03208575.figma.site/Almond Frost);
+  border: none;
+  outline: none;
+}
+
+.variant-13-31 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.component-1-2 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: rgba(245, 245, 245, 0.699999988079071);
+  border: 0.5px solid rgba(0, 0, 0, 1);
+  border-radius: 5px;
+}
+
+.text-35 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-inter);
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-black);
+  font-family: var(--font-family-inter);
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-black);
+}
+
+.text-36 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-inter);
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-black);
+  font-family: var(--font-family-inter);
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-black);
+}
+
+.text-37 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-inter);
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-black);
+  font-family: var(--font-family-inter);
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-black);
+}
+
+.text-38 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-inter);
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-black);
+  font-family: var(--font-family-inter);
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-black);
+}
+
+.text-39 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-inter);
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-black);
+  font-family: var(--font-family-inter);
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-black);
+}
+
+.text-40 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-inter);
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-black);
+  font-family: var(--font-family-inter);
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-black);
+}
+
+.text-41 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-inter);
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-black);
+  font-family: var(--font-family-inter);
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-black);
+}
+
+.text-42 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-inter);
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-black);
+  font-family: var(--font-family-inter);
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-black);
+}
+
+.text-43 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-inter);
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-black);
+  font-family: var(--font-family-inter);
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-black);
+}
+
+.text-44 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-inter);
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-black);
+  font-family: var(--font-family-inter);
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-black);
+}
+
+.text-45 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-inter);
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-black);
+  font-family: var(--font-family-inter);
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-black);
+}
+
+.text-46 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-inter);
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-black);
+  font-family: var(--font-family-inter);
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-black);
+}
+
+.text-47 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-inter);
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-black);
+  font-family: var(--font-family-inter);
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-black);
+}
+
+.y-axis-legend-34 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.component-1-1 {
+@media (max-width: 1440px) {
+  .component-1-1 {
+    padding-left: 24px;
+    padding-right: 24px;
   }
-  
-  .fusion-selection-overlay {
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-    background: rgba(0, 0, 0, 0.05) !important;
-    z-index: 2147483647 !important;
-    cursor: crosshair !important;
-    pointer-events: none !important;
+}
+
+@media (max-width: 768px) {
+  .component-1-1 {
+    padding-left: 16px;
+    padding-right: 16px;
   }
-  
-  .fusion-selection-tooltip {
-    position: fixed !important;
-    background: #1f2937 !important;
-    color: white !important;
-    padding: 8px 12px !important;
-    border-radius: 6px !important;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
-    font-size: 13px !important;
-    font-weight: 500 !important;
-    z-index: 2147483648 !important;
-    pointer-events: none !important;
-    transform: translate(-50%, -100%) translateY(-10px) !important;
-    white-space: nowrap !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+}
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.node-52 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.div-absolute-51 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  opacity: 0.3499999940395355;
+}
+
+.div-absolute-53 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-absolute-54 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-absolute-55 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.vector-58 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 2.24999737739563px solid var(--cell-laurel-03208575.figma.site/White);
+  border: none;
+  outline: none;
+}
+
+.variant-1 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-absolute-56 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  opacity: 0.5;
+}
+
+.div-h-px-61 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/Marigold 60%);
+}
+
+.cell-laurel-03208575-figma-site-lato-regular {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: center;
+  font-family: var(--font-family-lato);
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-184-134-42);
+}
+
+.span-62 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-h-px-64 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/Marigold 60%);
+}
+
+.div-flex-60 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.cell-laurel-03208575-figma-site-lato-regular-upper {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: center;
+  font-family: var(--font-family-lato);
+  font-weight: normal;
+  font-size: 12.800000190734863px;
+  letter-spacing: 3.200000047683716px;
+  line-height: 19.200000762939453px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text-rgb-201-165-90);
+}
+
+.cell-laurel-03208575-figma-site-eb-garamond-medium {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: center;
+  font-family: var(--font-family-eb-garamond);
+  font-weight: 500;
+  font-size: 67.19999694824219px;
+  line-height: 77.27999877929688px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-white);
+}
+
+.span-block-67 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.cell-laurel-03208575-figma-site-eb-garamond-medium-italic {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: center;
+  font-family: var(--font-family-eb-garamond);
+  font-weight: 500;
+  font-size: 67.19999694824219px;
+  line-height: 77.27999877929688px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-201-165-90);
+}
+
+.span-block-69 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.h1-66 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: -1px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.cell-laurel-03208575-figma-site-lato-light {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: center;
+  font-family: var(--font-family-lato);
+  font-weight: 300;
+  font-size: 16.799999237060547px;
+  line-height: 28.559999465942383px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-white);
+}
+
+.p-71 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px 15.619999885559082px 0px 15.609999656677246px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  max-width: 560px;
+}
+
+.cell-laurel-03208575-figma-site-lato-regular-upper {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: center;
+  font-family: var(--font-family-lato);
+  font-weight: normal;
+  font-size: 13.600000381469727px;
+  letter-spacing: 1.600000023841858px;
+  line-height: 20.399999618530273px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text-white);
+}
+
+.a-75 {
+@media (max-width: 1440px) {
+  .a-75 {
+    width: 47%;
+    min-width: 280px;
   }
-  
-  .fusion-selection-tooltip::after {
-    content: '' !important;
-    position: absolute !important;
-    top: 100% !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    border: 5px solid transparent !important;
-    border-top-color: #1f2937 !important;
+}
+
+@media (max-width: 768px) {
+  .a-75 {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
   }
-  
-  
-  @keyframes fusion-fade-in {
-    from { opacity: 0; }
-    to { opacity: 1; }
+}
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 14px 32px 14px 32px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 30%;
+  min-width: 280px;
+  background-color: var(--cell-laurel-03208575.figma.site/Marigold);
+}
+
+.a-77 {
+@media (max-width: 1440px) {
+  .a-77 {
+    width: 47%;
+    min-width: 280px;
   }
-  
-  @keyframes fusion-label-bounce {
-    0% { 
-      opacity: 0;
-      transform: translateY(-10px) scale(0.9);
-    }
-    50% {
-      opacity: 1;
-      transform: translateY(0) scale(1.05);
-    }
-    100% { 
-      opacity: 1;
-      transform: translateY(0) scale(1);
-    }
+}
+
+@media (max-width: 768px) {
+  .a-77 {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
   }
+}
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 14px 32px 14px 32px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 30%;
+  min-width: 280px;
+  border: 1px solid var(--cell-laurel-03208575.figma.site/White 40%);
+}
+
+.div-flex-74 {
+@media (max-width: 1440px) {
+  .div-flex-74 {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .div-flex-74 {
+    gap: 16px;
+  }
+}
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-flex-margin-73 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 8px 0px 0px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-relative-59 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  max-width: 768px;
+}
+
+.section-inicio-50 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 405.3800048828125px 0px 405.3900146484375px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 100%;
+  min-height: 1200px;
+  background-color: var(--cell-laurel-03208575.figma.site/Crowshead);
+}
+
+.div-h-px-83 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/Marigold 50%);
+}
+
+.cell-laurel-03208575-figma-site-lato-regular {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: center;
+  font-family: var(--font-family-lato);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-184-134-42);
+}
+
+.span-84 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-h-px-86 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/Marigold 50%);
+}
+
+.div-flex-82 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.cell-laurel-03208575-figma-site-lato-regular-upper {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: center;
+  font-family: var(--font-family-lato);
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 2.4000000953674316px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text-rgb-184-134-42);
+}
+
+.p-88 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.p-margin-87 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 8px 0px 0px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.cell-laurel-03208575-figma-site-eb-garamond-medium {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: center;
+  font-family: var(--font-family-eb-garamond);
+  font-weight: 500;
+  font-size: 44.79999923706055px;
+  line-height: 67.19999694824219px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-44-24-16);
+}
+
+.cell-laurel-03208575-figma-site-lato-light {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: center;
+  font-family: var(--font-family-lato);
+  font-weight: 300;
+  font-size: 15.199999809265137px;
+  line-height: 25.84000015258789px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-140-123-110);
+}
+
+.p-91 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px 29.5px 0.7699999809265137px 29.5px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  max-width: 512px;
+}
+
+.div-81 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.cell-laurel-03208575-figma-site-lato-regular {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: center;
+  font-family: var(--font-family-lato);
+  font-weight: normal;
+  font-size: 12.800000190734863px;
+  letter-spacing: 0.7680000066757202px;
+  line-height: 19.200000762939453px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-white);
+}
+
+.button-94 {
+@media (max-width: 1440px) {
+  .button-94 {
+    width: 47%;
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .button-94 {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7.5px 20px 8.6899995803833px 20px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 30%;
+  min-width: 280px;
+  background-color: var(--cell-laurel-03208575.figma.site/Cioccolato);
+}
+
+.cell-laurel-03208575-figma-site-lato-regular {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: center;
+  font-family: var(--font-family-lato);
+  font-weight: normal;
+  font-size: 12.800000190734863px;
+  letter-spacing: 0.7680000066757202px;
+  line-height: 19.200000762939453px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-107-45-14);
+}
+
+.button-96 {
+@media (max-width: 1440px) {
+  .button-96 {
+    width: 47%;
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .button-96 {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7.5px 20px 8.6899995803833px 20px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 30%;
+  min-width: 280px;
+  background-color: var(--cell-laurel-03208575.figma.site/White);
+  border: 1px solid var(--cell-laurel-03208575.figma.site/Cioccolato 20%);
+}
+
+.button-98 {
+@media (max-width: 1440px) {
+  .button-98 {
+    width: 47%;
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .button-98 {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7.5px 20px 8.6899995803833px 20px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 30%;
+  min-width: 280px;
+  background-color: var(--cell-laurel-03208575.figma.site/White);
+  border: 1px solid var(--cell-laurel-03208575.figma.site/Cioccolato 20%);
+}
+
+.button-100 {
+@media (max-width: 1440px) {
+  .button-100 {
+    width: 47%;
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .button-100 {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7.5px 20px 8.6899995803833px 20px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 30%;
+  min-width: 280px;
+  background-color: var(--cell-laurel-03208575.figma.site/White);
+  border: 1px solid var(--cell-laurel-03208575.figma.site/Cioccolato 20%);
+}
+
+.button-102 {
+@media (max-width: 1440px) {
+  .button-102 {
+    width: 47%;
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .button-102 {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7.5px 20px 8.6899995803833px 20px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 30%;
+  min-width: 280px;
+  background-color: var(--cell-laurel-03208575.figma.site/White);
+  border: 1px solid var(--cell-laurel-03208575.figma.site/Cioccolato 20%);
+}
+
+.button-104 {
+@media (max-width: 1440px) {
+  .button-104 {
+    width: 47%;
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .button-104 {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7.5px 20px 8.6899995803833px 20px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 30%;
+  min-width: 280px;
+  background-color: var(--cell-laurel-03208575.figma.site/White);
+  border: 1px solid var(--cell-laurel-03208575.figma.site/Cioccolato 20%);
+}
+
+.div-93 {
+@media (max-width: 1440px) {
+  .div-93 {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .div-93 {
+    gap: 16px;
+  }
+}
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 100%;
+}
+
+.node-109 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.node-110 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.cell-laurel-03208575-figma-site-lato-regular-upper {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-lato);
+  font-weight: normal;
+  font-size: 10.399999618530273px;
+  letter-spacing: 1.0399999618530273px;
+  line-height: 15.600000381469727px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text-white);
+}
+
+.span-111 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 4px 10px 4px 10px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/Marigold);
+}
+
+.div-108 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/Dawn Pink);
+}
+
+.cell-laurel-03208575-figma-site-lato-regular-upper {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-lato);
+  font-weight: normal;
+  font-size: 11.199999809265137px;
+  letter-spacing: 1.343999981880188px;
+  line-height: 16.799999237060547px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text-rgb-184-134-42);
+}
+
+.p-114 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 0px 0.800000011920929px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.cell-laurel-03208575-figma-site-eb-garamond-medium {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-eb-garamond);
+  font-weight: 500;
+  font-size: 19.200000762939453px;
+  line-height: 28.799999237060547px;
+  text-decoration: underline;
+  text-transform: none;
+  color: var(--text-rgb-44-24-16);
+}
+
+.h3-116 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.cell-laurel-03208575-figma-site-lato-light {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-lato);
+  font-weight: 300;
+  font-size: 13.600000381469727px;
+  line-height: 21.760000228881836px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-140-123-110);
+}
+
+.p-118 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.cell-laurel-03208575-figma-site-eb-garamond-semibold {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-eb-garamond);
+  font-weight: 700;
+  font-size: 22.399999618530273px;
+  line-height: 22.399999618530273px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-107-45-14);
+}
+
+.cell-laurel-03208575-figma-site-eb-garamond-regular {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-eb-garamond);
+  font-weight: normal;
+  font-size: 12.800000190734863px;
+  line-height: 19.200000762939453px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-140-123-110);
+}
+
+.div-122 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.vector-127 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.2704178094863892px solid var(--cell-laurel-03208575.figma.site/White);
+  border: none;
+  outline: none;
+}
+
+.variant-2 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.cell-laurel-03208575-figma-site-lato-regular {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: center;
+  font-family: var(--font-family-lato);
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 0.7200000286102295px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-white);
+}
+
+.button-125 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px 8px 16px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/Cioccolato);
+}
+
+.div-121 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 169.94000244140625px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 100%;
+}
+
+.div-margin-120 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 8px 0px 0px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-113 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 19px 20px 20px 20px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 99.45652173913044%;
+}
+
+.div-107 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 31.944444444444443%;
+  background-color: var(--cell-laurel-03208575.figma.site/White);
+  border: 1px solid var(--cell-laurel-03208575.figma.site/Cioccolato 10%);
+}
+
+.node-131 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.node-132 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.div-130 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/Dawn Pink);
+}
+
+.p-134 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 0px 0.800000011920929px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.h3-136 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.p-138 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-142 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.vector-147 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.2704178094863892px solid var(--cell-laurel-03208575.figma.site/White);
+  border: none;
+  outline: none;
+}
+
+.button-145 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px 8px 16px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/Cioccolato);
+}
+
+.div-141 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 169.94000244140625px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 100%;
+}
+
+.div-margin-140 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 8px 0px 0px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-133 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 19px 20px 20px 20px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 99.45652173913044%;
+}
+
+.div-129 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 31.944444444444443%;
+  background-color: var(--cell-laurel-03208575.figma.site/White);
+  border: 1px solid var(--cell-laurel-03208575.figma.site/Cioccolato 10%);
+}
+
+.node-151 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.node-152 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.span-153 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 4px 10px 4px 10px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/Marigold);
+}
+
+.div-150 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/Dawn Pink);
+}
+
+.p-156 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 0px 0.800000011920929px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.h3-158 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.p-160 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-164 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.vector-169 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.2704178094863892px solid var(--cell-laurel-03208575.figma.site/White);
+  border: none;
+  outline: none;
+}
+
+.button-167 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px 8px 16px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/Cioccolato);
+}
+
+.div-163 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 169.94000244140625px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 100%;
+}
+
+.div-margin-162 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 8px 0px 0px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-155 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 19px 20px 20px 20px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 99.45652173913044%;
+}
+
+.div-149 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 31.944444444444443%;
+  background-color: var(--cell-laurel-03208575.figma.site/White);
+  border: 1px solid var(--cell-laurel-03208575.figma.site/Cioccolato 10%);
+}
+
+.node-173 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.div-172 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 99.45652173913044%;
+  background-color: var(--cell-laurel-03208575.figma.site/Dawn Pink);
+}
+
+.p-175 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 0px 0.800000011920929px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.h3-177 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.p-179 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-183 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.vector-188 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.2704178094863892px solid var(--cell-laurel-03208575.figma.site/White);
+  border: none;
+  outline: none;
+}
+
+.button-186 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px 8px 16px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/Cioccolato);
+}
+
+.div-182 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 169.94000244140625px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 100%;
+}
+
+.div-margin-181 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 8px 0px 0px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-174 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 19px 20px 20px 20px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 99.45652173913044%;
+}
+
+.div-171 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 31.944444444444443%;
+  background-color: var(--cell-laurel-03208575.figma.site/White);
+  border: 1px solid var(--cell-laurel-03208575.figma.site/Cioccolato 10%);
+}
+
+.node-192 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.span-193 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 4px 10px 4px 10px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/Marigold);
+}
+
+.div-191 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/Dawn Pink);
+}
+
+.p-196 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 0px 0.800000011920929px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.h3-198 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.p-200 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-204 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.vector-209 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.2704178094863892px solid var(--cell-laurel-03208575.figma.site/White);
+  border: none;
+  outline: none;
+}
+
+.button-207 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px 8px 16px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/Cioccolato);
+}
+
+.div-203 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 169.94000244140625px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 100%;
+}
+
+.div-margin-202 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 8px 0px 0px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-195 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 19px 20px 20px 20px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 99.45652173913044%;
+}
+
+.div-190 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 31.944444444444443%;
+  background-color: var(--cell-laurel-03208575.figma.site/White);
+  border: 1px solid var(--cell-laurel-03208575.figma.site/Cioccolato 10%);
+}
+
+.node-213 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.div-212 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 99.45652173913044%;
+  background-color: var(--cell-laurel-03208575.figma.site/Dawn Pink);
+}
+
+.p-215 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 0px 0.800000011920929px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.h3-217 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.p-219 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-223 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.vector-228 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.2704178094863892px solid var(--cell-laurel-03208575.figma.site/White);
+  border: none;
+  outline: none;
+}
+
+.button-226 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px 8px 16px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/Cioccolato);
+}
+
+.div-222 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 169.94000244140625px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 100%;
+}
+
+.div-margin-221 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 8px 0px 0px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-214 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 19px 20px 20px 20px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 99.45652173913044%;
+}
+
+.div-211 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 31.944444444444443%;
+  background-color: var(--cell-laurel-03208575.figma.site/White);
+  border: 1px solid var(--cell-laurel-03208575.figma.site/Cioccolato 10%);
+}
+
+.node-232 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.span-233 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 4px 10px 4px 10px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/Marigold);
+}
+
+.div-231 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/Dawn Pink);
+}
+
+.p-236 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 0px 0.800000011920929px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.h3-238 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.p-240 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-244 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.vector-249 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.2704178094863892px solid var(--cell-laurel-03208575.figma.site/White);
+  border: none;
+  outline: none;
+}
+
+.button-247 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px 8px 16px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/Cioccolato);
+}
+
+.div-243 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 169.94000244140625px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 100%;
+}
+
+.div-margin-242 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 8px 0px 0px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-235 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 19px 20px 19.989999771118164px 20px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 99.45652173913044%;
+}
+
+.div-230 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 31.944444444444443%;
+  background-color: var(--cell-laurel-03208575.figma.site/White);
+  border: 1px solid var(--cell-laurel-03208575.figma.site/Cioccolato 10%);
+}
+
+.node-253 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.div-252 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 99.45652173913044%;
+  background-color: var(--cell-laurel-03208575.figma.site/Dawn Pink);
+}
+
+.p-255 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 0px 0.800000011920929px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.h3-257 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.p-259 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-263 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.vector-268 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.2704178094863892px solid var(--cell-laurel-03208575.figma.site/White);
+  border: none;
+  outline: none;
+}
+
+.button-266 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px 8px 16px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/Cioccolato);
+}
+
+.div-262 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 169.94000244140625px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 100%;
+}
+
+.div-margin-261 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 8px 0px 0px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-254 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 19px 20px 19.989999771118164px 20px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 99.45652173913044%;
+}
+
+.div-251 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 31.944444444444443%;
+  background-color: var(--cell-laurel-03208575.figma.site/White);
+  border: 1px solid var(--cell-laurel-03208575.figma.site/Cioccolato 10%);
+}
+
+.node-272 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.div-271 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 99.45652173913044%;
+  background-color: var(--cell-laurel-03208575.figma.site/Dawn Pink);
+}
+
+.p-274 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 0px 0.800000011920929px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.h3-276 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.p-278 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-282 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.vector-287 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.2704178094863892px solid var(--cell-laurel-03208575.figma.site/White);
+  border: none;
+  outline: none;
+}
+
+.button-285 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px 8px 16px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/Cioccolato);
+}
+
+.div-281 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 181.4199981689453px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 100%;
+}
+
+.div-margin-280 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 8px 0px 0px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-273 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 19px 20px 19.989999771118164px 20px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 99.45652173913044%;
+}
+
+.div-270 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 31.944444444444443%;
+  background-color: var(--cell-laurel-03208575.figma.site/White);
+  border: 1px solid var(--cell-laurel-03208575.figma.site/Cioccolato 10%);
+}
+
+.div-106 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-80 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 48px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  max-width: 1152px;
+}
+
+.section-productos-79 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 96px 384px 96px 384px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/Fantasy);
+}
+
+.div-h-px-293 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/Marigold 50%);
+}
+
+.span-294 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-h-px-296 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/Marigold 50%);
+}
+
+.div-flex-292 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.p-298 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.p-margin-297 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 8px 0px 0px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-291 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.cell-laurel-03208575-figma-site-eb-garamond-medium {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-eb-garamond);
+  font-weight: 500;
+  font-size: 22.399999618530273px;
+  line-height: 33.599998474121094px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-44-24-16);
+}
+
+.h3-303 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 0px 0.6100000143051147px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.cell-laurel-03208575-figma-site-inter-regular {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-inter);
+  font-weight: normal;
+  font-size: 13.300000190734863px;
+  line-height: 21px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-184-134-42);
+}
+
+.div-306 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.cell-laurel-03208575-figma-site-eb-garamond-italic {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-eb-garamond);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 27.200000762939453px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-44-24-16);
+}
+
+.p-308 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.cell-laurel-03208575-figma-site-eb-garamond-regular {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: center;
+  font-family: var(--font-family-eb-garamond);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-white);
+}
+
+.div-311 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 3.5px 0px 4.5px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 6.324110671936759%;
+  background-color: var(--cell-laurel-03208575.figma.site/Marigold);
+  border-radius: 16px;
+}
+
+.cell-laurel-03208575-figma-site-lato-bold {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-lato);
+  font-weight: 700;
+  font-size: 13.600000381469727px;
+  line-height: 20.399999618530273px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-44-24-16);
+}
+
+.p-314 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.cell-laurel-03208575-figma-site-lato-regular {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-lato);
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-140-123-110);
+}
+
+.p-316 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-313 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: -5.826450433232822e-13px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-310 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 91.00719424460432%;
+}
+
+.div-305 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 24px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/White);
+  border: 1px solid var(--cell-laurel-03208575.figma.site/Cioccolato 10%);
+}
+
+.div-319 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.p-321 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-324 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 3.5px 0px 4.5px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 6.324110671936759%;
+  background-color: var(--cell-laurel-03208575.figma.site/Marigold);
+  border-radius: 16px;
+}
+
+.p-327 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.p-329 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-326 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.009999999776482582px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-323 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 91.00719424460432%;
+}
+
+.div-318 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 24px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/White);
+  border: 1px solid var(--cell-laurel-03208575.figma.site/Cioccolato 10%);
+}
+
+.div-332 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.p-334 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-337 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 3.5px 0px 4.5px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 6.324110671936759%;
+  background-color: var(--cell-laurel-03208575.figma.site/Marigold);
+  border-radius: 16px;
+}
+
+.p-340 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.p-342 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-339 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 3.268496584496461e-13px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-336 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 91.00719424460432%;
+}
+
+.div-331 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 24px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/White);
+  border: 1px solid var(--cell-laurel-03208575.figma.site/Cioccolato 10%);
+}
+
+.div-302 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 48.26388888888889%;
+}
+
+.h3-345 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 0px 0.6100000143051147px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.vector-350 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.7136437892913818px solid var(--cell-laurel-03208575.figma.site/Fun Green);
+  border: none;
+  outline: none;
+}
+
+.variant-3 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-348 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 8.979591836734693%;
+  background-color: var(--cell-laurel-03208575.figma.site/Feta);
+  border: 1px solid var(--cell-laurel-03208575.figma.site/Ice Cold);
+  border-radius: 22px;
+}
+
+.cell-laurel-03208575-figma-site-lato-regular-upper {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-lato);
+  font-weight: normal;
+  font-size: 11.5px;
+  letter-spacing: 1.1519999504089355px;
+  line-height: 17.25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text-rgb-140-123-110);
+}
+
+.p-352 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.cell-laurel-03208575-figma-site-lato-regular {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-lato);
+  font-weight: normal;
+  font-size: 15.199999809265137px;
+  line-height: 22.799999237060547px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-44-24-16);
+}
+
+.p-354 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1px 0px 0px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.cell-laurel-03208575-figma-site-lato-light {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-lato);
+  font-weight: 300;
+  font-size: 12.800000190734863px;
+  line-height: 19.200000762939453px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-0-130-54);
+}
+
+.p-356 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-351 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: -1px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.a-347 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 88.12949640287769%;
+}
+
+.vector-361 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.6363637447357178px solid var(--cell-laurel-03208575.figma.site/Marigold);
+  border: none;
+  outline: none;
+}
+
+.variant-4 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-359 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 8.979591836734693%;
+  background-color: var(--cell-laurel-03208575.figma.site/Dawn Pink);
+  border: 1px solid var(--cell-laurel-03208575.figma.site/Marigold 20%);
+  border-radius: 22px;
+}
+
+.p-363 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.p-365 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-362 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.a-358 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 88.12949640287769%;
+}
+
+.vector-370 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.6363637447357178px solid var(--cell-laurel-03208575.figma.site/Marigold);
+  border: none;
+  outline: none;
+}
+
+.variant-5 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-368 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 8.979591836734693%;
+  background-color: var(--cell-laurel-03208575.figma.site/Dawn Pink);
+  border: 1px solid var(--cell-laurel-03208575.figma.site/Marigold 20%);
+  border-radius: 22px;
+}
+
+.p-372 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.p-374 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1px 0px 0px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.cell-laurel-03208575-figma-site-lato-light {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-lato);
+  font-weight: 300;
+  font-size: 12.800000190734863px;
+  line-height: 19.200000762939453px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-140-123-110);
+}
+
+.p-376 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-371 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: -1px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-367 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 88.12949640287769%;
+}
+
+.vector-380 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.9040474891662598px solid var(--cell-laurel-03208575.figma.site/White);
+  border: none;
+  outline: none;
+}
+
+.variant-6 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.cell-laurel-03208575-figma-site-lato-regular {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: center;
+  font-family: var(--font-family-lato);
+  font-weight: normal;
+  font-size: 14.399999618530273px;
+  letter-spacing: 1.1519999504089355px;
+  line-height: 21.600000381469727px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-white);
+}
+
+.a-378 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 88.12949640287769%;
+  background-color: var(--cell-laurel-03208575.figma.site/Fun Green);
+}
+
+.div-344 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 31px 32px 32px 32px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/White);
+  border: 1px solid var(--cell-laurel-03208575.figma.site/Cioccolato 12%);
+}
+
+.div-301 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-290 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 47.9900016784668px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  max-width: 1152px;
+}
+
+.section-contacto-289 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 96px 384px 96px 384px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/Fantasy);
+  border-top: 1px solid var(--cell-laurel-03208575.figma.site/Marigold 15%);
+}
+
+.div-383 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.cell-laurel-03208575-figma-site-lato-regular {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-lato);
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-184-134-42);
+}
+
+.span-388 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.cell-laurel-03208575-figma-site-lato-regular-upper {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-lato);
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 21px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text-white);
+}
+
+.span-390 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-387 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 100%;
+}
+
+.cell-laurel-03208575-figma-site-lato-light {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-lato);
+  font-weight: 300;
+  font-size: 13.600000381469727px;
+  line-height: 23.1200008392334px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-200-184-154);
+}
+
+.p-392 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-386 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15.055000305175781px;
+  padding: 0px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 22.282608695652172%;
+}
+
+.cell-laurel-03208575-figma-site-lato-regular-upper {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-lato);
+  font-weight: normal;
+  font-size: 11px;
+  letter-spacing: 1.7280000448226929px;
+  line-height: 16.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text-rgb-201-165-90);
+}
+
+.h4-395 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.cell-laurel-03208575-figma-site-lato-light {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-lato);
+  font-weight: 300;
+  font-size: 14.100000381469727px;
+  line-height: 21.149999618530273px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-200-184-154);
+}
+
+.a-397 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.a-399 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.a-401 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.a-403 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-394 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 0px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 22.282608695652172%;
+}
+
+.h4-406 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.a-408 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.a-409 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.a-411 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.a-413 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.a-415 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-405 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 0px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 22.282608695652172%;
+}
+
+.h4-418 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.a-420 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.a-422 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.a-424 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-417 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 0px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 22.282608695652172%;
+}
+
+.div-385 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 40px;
+  padding: 0px 0px 16px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 95.83333333333334%;
+}
+
+.div-426 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/Marigold 15%);
+}
+
+.cell-laurel-03208575-figma-site-lato-light {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-lato);
+  font-weight: 300;
+  font-size: 12.5px;
+  line-height: 18.75px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-140-123-110);
+}
+
+.p-428 {
+@media (max-width: 1440px) {
+  .p-428 {
+    width: 47%;
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .p-428 {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 30%;
+  min-width: 280px;
+}
+
+.p-430 {
+@media (max-width: 1440px) {
+  .p-430 {
+    width: 47%;
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .p-430 {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 30%;
+  min-width: 280px;
+}
+
+.div-427 {
+@media (max-width: 1440px) {
+  .div-427 {
+    gap: 526.030029296875px;
+  }
+}
+
+@media (max-width: 768px) {
+  .div-427 {
+    gap: 526.030029296875px;
+  }
+}
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 526.030029296875px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 100%;
+}
+
+.div-384 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 56px 24px 56px 24px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  max-width: 1152px;
+}
+
+.footer-382 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/Crowshead);
+}
+
+.div-h-px-436 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/Marigold 50%);
+}
+
+.span-437 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-h-px-439 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/Marigold 50%);
+}
+
+.div-flex-435 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.p-441 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.p-margin-440 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 8px 0px 0px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.cell-laurel-03208575-figma-site-eb-garamond-medium {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: center;
+  font-family: var(--font-family-eb-garamond);
+  font-weight: 500;
+  font-size: 44.79999923706055px;
+  line-height: 67.19999694824219px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-255-248-240);
+}
+
+.cell-laurel-03208575-figma-site-lato-light {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: center;
+  font-family: var(--font-family-lato);
+  font-weight: 300;
+  font-size: 15.199999809265137px;
+  line-height: 25.84000015258789px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-200-184-154);
+}
+
+.p-444 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px 8.859999656677246px 0.7699999809265137px 8.84000015258789px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  max-width: 512px;
+}
+
+.div-434 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.vector-450 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.817911148071289px solid var(--cell-laurel-03208575.figma.site/Marigold);
+  border: none;
+  outline: none;
+}
+
+.variant-7 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-448 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 17.77777777777778%;
+  border: 1px solid var(--cell-laurel-03208575.figma.site/Marigold 40%);
+  border-radius: 24px;
+}
+
+.cell-laurel-03208575-figma-site-eb-garamond-medium {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: center;
+  font-family: var(--font-family-eb-garamond);
+  font-weight: 500;
+  font-size: 18.399999618530273px;
+  line-height: 27.600000381469727px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-white);
+}
+
+.cell-laurel-03208575-figma-site-lato-light {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: center;
+  font-family: var(--font-family-lato);
+  font-weight: 300;
+  font-size: 13.600000381469727px;
+  line-height: 23.1200008392334px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-200-184-154);
+}
+
+.p-452 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px 0.75px 0px 0.75px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-447 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 11px;
+  padding: 29px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 23.4375%;
+  background-color: var(--cell-laurel-03208575.figma.site/Bridal Heath 4%);
+  border: 1px solid var(--cell-laurel-03208575.figma.site/Marigold 15%);
+}
+
+.vector-457 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.817911148071289px solid var(--cell-laurel-03208575.figma.site/Marigold);
+  border: none;
+  outline: none;
+}
+
+.variant-8 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-455 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 17.77777777777778%;
+  border: 1px solid var(--cell-laurel-03208575.figma.site/Marigold 40%);
+  border-radius: 24px;
+}
+
+.p-459 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px 1.690000057220459px 0px 1.690000057220459px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-454 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 11px;
+  padding: 29px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 23.4375%;
+  background-color: var(--cell-laurel-03208575.figma.site/Bridal Heath 4%);
+  border: 1px solid var(--cell-laurel-03208575.figma.site/Marigold 15%);
+}
+
+.vector-464 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 2.5000112056732178px solid var(--cell-laurel-03208575.figma.site/Marigold);
+  border: none;
+  outline: none;
+}
+
+.variant-9 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-462 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 17.77777777777778%;
+  border: 1px solid var(--cell-laurel-03208575.figma.site/Marigold 40%);
+  border-radius: 24px;
+}
+
+.p-466 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px 8.390000343322754px 0px 8.380000114440918px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-461 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 11px;
+  padding: 29px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 23.4375%;
+  background-color: var(--cell-laurel-03208575.figma.site/Bridal Heath 4%);
+  border: 1px solid var(--cell-laurel-03208575.figma.site/Marigold 15%);
+}
+
+.vector-471 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.817911148071289px solid var(--cell-laurel-03208575.figma.site/Marigold);
+  border: none;
+  outline: none;
+}
+
+.variant-10 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-469 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 17.77777777777778%;
+  border: 1px solid var(--cell-laurel-03208575.figma.site/Marigold 40%);
+  border-radius: 24px;
+}
+
+.p-473 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px 5.71999979019165px 0px 5.71999979019165px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-468 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 11px;
+  padding: 29px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 23.4375%;
+  background-color: var(--cell-laurel-03208575.figma.site/Bridal Heath 4%);
+  border: 1px solid var(--cell-laurel-03208575.figma.site/Marigold 15%);
+}
+
+.div-446 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 100%;
+}
+
+.cell-laurel-03208575-figma-site-eb-garamond-semibold {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-eb-garamond);
+  font-weight: 700;
+  font-size: 35.20000076293945px;
+  line-height: 52.79999923706055px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-184-134-42);
+}
+
+.span-477 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 0px 0.800000011920929px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.cell-laurel-03208575-figma-site-lato-regular-upper {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-lato);
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 1.2000000476837158px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text-rgb-200-184-154);
+}
+
+.span-479 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-476 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.8474111129762605e-13px;
+  padding: 31px 0px 32px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border-right: 1px solid var(--cell-laurel-03208575.figma.site/Marigold 20%);
+}
+
+.span-482 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 0px 0.800000011920929px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.span-484 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-481 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.8474111129762605e-13px;
+  padding: 31px 0px 32px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border-right: 1px solid var(--cell-laurel-03208575.figma.site/Marigold 20%);
+}
+
+.span-487 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 0px 0.800000011920929px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  min-width: 53.25px;
+}
+
+.span-489 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-486 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.8474111129762605e-13px;
+  padding: 31px 0px 32px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-475 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 100%;
+  border: 1px solid var(--cell-laurel-03208575.figma.site/Marigold 20%);
+}
+
+.div-433 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 64px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  max-width: 1152px;
+}
+
+.div-491 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-492 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.section-nosotros-432 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 96px 384px 96px 384px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/Coffee Bean);
+}
+
+.a-493 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-49 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  min-height: 1200px;
+  background-color: var(--cell-laurel-03208575.figma.site/Fantasy);
+}
+
+.span-498 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.cell-laurel-03208575-figma-site-lato-regular-upper {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-lato);
+  font-weight: normal;
+  font-size: 15px;
+  letter-spacing: 2px;
+  line-height: 22.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text-white);
+}
+
+.span-500 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-flex-497 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.cell-laurel-03208575-figma-site-lato-regular-upper {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-lato);
+  font-weight: normal;
+  font-size: 12.800000190734863px;
+  letter-spacing: 1.600000023841858px;
+  line-height: 19.200000762939453px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text-white);
+}
+
+.a-503 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.a-505 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.a-507 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.a-509 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-hidden-502 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 32px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.vector-512 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.6666666269302368px solid var(--cell-laurel-03208575.figma.site/White);
+  border: none;
+  outline: none;
+}
+
+.vector-513 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.6666666269302368px solid var(--cell-laurel-03208575.figma.site/White);
+  border: none;
+  outline: none;
+}
+
+.vector-514 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.6666666269302368px solid var(--cell-laurel-03208575.figma.site/White);
+  border: none;
+  outline: none;
+}
+
+.variant-11 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-max-w-6xl-496 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 257.29998779296875px;
+  padding: 0px 24px 0px 24px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 100%;
+  max-width: 1152px;
+}
+
+.nav-fixed-495 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 384px 0px 384px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  backdrop-filter: blur(12px);
+  background-color: var(--cell-laurel-03208575.figma.site/Crowshead 70%);
+  border-bottom: 1px solid var(--cell-laurel-03208575.figma.site/Black 0%);
+}
+
+.div-515 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/Black 50%);
+  opacity: 0;
+}
+
+.vector-520 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.5px solid var(--cell-laurel-03208575.figma.site/Cioccolato);
+  border: none;
+  outline: none;
+}
+
+.vector-521 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.5px solid var(--cell-laurel-03208575.figma.site/Cioccolato);
+  border: none;
+  outline: none;
+}
+
+.vector-522 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.5px solid var(--cell-laurel-03208575.figma.site/Cioccolato);
+  border: none;
+  outline: none;
+}
+
+.variant-12 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.cell-laurel-03208575-figma-site-eb-garamond-medium {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-eb-garamond);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-44-24-16);
+}
+
+.span-523 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-518 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.vector-527 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.6666666269302368px solid var(--cell-laurel-03208575.figma.site/Almond Frost);
+  border: none;
+  outline: none;
+}
+
+.vector-528 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 1.6666666269302368px solid var(--cell-laurel-03208575.figma.site/Almond Frost);
+  border: none;
+  outline: none;
+}
+
+.variant-13 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.button-525 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-517 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 215.1699981689453px;
+  padding: 20px 24px 20px 24px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 100%;
+  border-bottom: 1px solid var(--cell-laurel-03208575.figma.site/Cioccolato 10%);
+}
+
+.cell-laurel-03208575-figma-site-lato-regular {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: center;
+  font-family: var(--font-family-lato);
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 54px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-184-134-42);
+}
+
+.span-531 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.cell-laurel-03208575-figma-site-eb-garamond-regular {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: center;
+  font-family: var(--font-family-eb-garamond);
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-44-24-16);
+}
+
+.p-533 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.cell-laurel-03208575-figma-site-lato-light {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: center;
+  font-family: var(--font-family-lato);
+  font-weight: 300;
+  font-size: 13.600000381469727px;
+  line-height: 20.399999618530273px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-140-123-110);
+}
+
+.p-535 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.cell-laurel-03208575-figma-site-lato-regular-upper {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: center;
+  font-family: var(--font-family-lato);
+  font-weight: normal;
+  font-size: 12.800000190734863px;
+  letter-spacing: 0.7680000066757202px;
+  line-height: 19.200000762939453px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text-white);
+}
+
+.button-538 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 11px 24px 12.1899995803833px 24px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/Cioccolato);
+}
+
+.button-margin-537 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 8px 0px 0px 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.div-530 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 0px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 88%;
+}
+
+.div-529 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 16px 24px 16px 24px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 100%;
+}
+
+.div-516 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 20.833333333333336%;
+  max-width: 400px;
+  box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.5);
+  background-color: var(--cell-laurel-03208575.figma.site/White);
+}
+
+.1920w-light-48 {
+@media (max-width: 1440px) {
+  .1920w-light-48 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .1920w-light-48 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  max-width: 1920px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: var(--cell-laurel-03208575.figma.site/White);
+}
